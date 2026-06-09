@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ar"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENCS3320-Webserver</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        .hero-section {
+            background-image: url("media/net.jpg");
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 40px;
+        }
+
+        .hero-title {
+            font-size: 42px;
+            font-weight: bold;
+            font-style: italic;
+            color: darkblue;
+            text-align: center;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 14px;
+            font-style: italic;
+            font-family: cursive;
+            color: #222;
+        }
+
+        .team-img {
+            display: block;
+            margin: 30px auto 10px auto;
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #5c7cfa;
+            color: white;
+        }
+
+        td img {
+            border-radius: 8px;
+        }
+
+        .protocol-section {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+        }
+
+        .protocol-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .protocol-section h1 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 48px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 12px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            gap: 30px;
+        }
+
+        .content-section h2,
+        .content-section h3 {
+            color: #056e46;
+        }
+
+        .content-section p,
+        .content-section li {
+            font-size: 17px;
+            color: #333;
+        }
+
+        .content-section ol,
+        .content-section ul {
+            padding-left: 20px;
+        }
+
+        .content-section img {
+            margin-top: 80px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-title">
+            ENCS3320 مرحبًا بكم في <br> شبكات الحاسوب <br> خادم الويب
+        </div>
+        <div class="footer">
+            إعداد: سارة السوقي & سجى علي <br>
+            المدرّس: إبراهيم النمر
+        </div>
+    </div>
+
+    <img src="media/team.jpeg" alt="أعضاء الفريق" class="team-img">
+
+    <table>
+        <tr>
+            <th>الصورة</th>
+            <th>الاسم</th>
+            <th>الرقم الجامعي</th>
+            <th>الوصف</th>
+        </tr>
+        <tr>
+            <td><img src="media/mem1.jpg" alt="صورة سارة" width="100" height="100"></td> 
+            <td>سارة السوقي</td>
+            <td>1221618</td>
+            <td>
+                <p>المشاريع: خادم الويب</p>
+                <p>المهارات: بايثون، C، الشبكات، جافا</p>
+                <p>الهوايات: القراءة</p>    
+            </td>
+        </tr>
+        <tr>
+            <td><img src="media/mem2.jpg" alt="صورة سجى" width="100" height="100"></td>
+            <td>سجى علي</td>
+            <td>1221707</td>
+            <td>
+                <p>المشاريع: خادم الويب</p>
+                <p>المهارات: بايثون، C، الشبكات، جافا</p>
+                <p>الهوايات: الرياضيات</p>    
+            </td>
+        </tr>
+    </table> 
+
+    <div class="protocol-section">
+        <img src="media/protocol.jpg" alt="صورة البروتوكول">
+        <h1>ما هو البروتوكول؟</h1>
+    </div>
+
+    <div class="content-section">
+        <div style="width: 55%;">
+            <h2>ما هو البروتوكول؟</h2>
+            <p>
+                البروتوكول في شبكات الحاسوب هو مجموعة من القواعد التي تنظم الاتصال بين كيانين أو أكثر.
+                هذه القواعد تحدد كيفية تنسيق الرسائل، وترتيبها، وكيفيةاستجابة الأطراف لها.
+            </p>
+            <h3>تشبيه بشري</h3>
+            <p>
+                كما يتبع شخصان نمطًا معينًا عند التحية (مثلاً: "مرحبًا" ثم الرد، ثم طرح سؤال)، 
+                تتبع الحواسيب بروتوكولات عند التواصل.
+            </p>
+            <p>
+                <em>مثال:</em> إذا قال الشخص أ: "مرحبًا"، ورد الشخص ب: "مرحبًا"، عندها فقط يسأل الشخص أ السؤال. 
+                نفس المنطق ينطبق على بروتوكولات الشبكة.
+            </p>
+            <h3>الخصائص الأساسية للبروتوكولات:</h3>
+            <ol>
+                <li><strong>البنية (Syntax):</strong> تحدد شكل أو تنسيق البيانات (مثل الترويسات والحقول).</li>
+                <li><strong>الدلالات (Semantics):</strong> توضح معنى كل جزء من الرسالة.</li>
+                <li><strong>التوقيت (Timing):</strong> يشمل توقيت إرسال البيانات وسرعتها.</li>
+            </ol>
+            <h3>أمثلة على بروتوكولات الشبكة:</h3>
+            <ul>
+                <li><strong>HTTP:</strong> لنقل صفحات الويب عبر الإنترنت.</li>
+                <li><strong>TCP/IP:</strong> يضمن الاتصال الموثوق بين الحواسيب.</li>
+                <li><strong>DNS:</strong> لتحويل أسماء النطاقات إلى عناوين IP.</li>
+                <li><strong>SMTP:</strong> لإرسال البريد الإلكتروني.</li>
+            </ul>
+        </div>
+
+
+        <div style="width: 40%;">
+            <img src="media/typeOfprotocols.jpg" alt="رسم توضيحي للبروتوكولات">
+        </div>
+    </div>
+    <div style="text-align: center; padding: 20px; background-color: #eef; margin-top: 0px;">
+        <a href="mySite_1221618_ar.html" target="_blank" style="font-size: 20px; color: #0056b3; text-decoration: none;">
+          👉 انقر لزيارة صفحتي الشخصية
+        </a>
+    </div>
+    <div style="text-align: center; padding: 20px; background-color: #eef;">
+        <h2 style="color: #056e46;">مصادر خارجية</h2>
+        <p>
+            <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" style="font-size: 18px; color: #0056b3; text-decoration: none;">
+                الكتاب - Kurose & Ross
+            </a>
+        </p>
+        <p>
+            <a href="https://www.birzeit.edu/" target="_blank" style="font-size: 18px; color: #0056b3; text-decoration: none;">
+                موقع جامعة بيرزيت
+            </a>
+        </p>
+    </div>
+      
+</body>
+</html>

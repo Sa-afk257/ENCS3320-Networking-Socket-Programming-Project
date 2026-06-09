@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 " style="color: red;">
+    <title>ENCS3320-Webserver</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f9;
+        }
+
+        .hero-section {
+            background-image: url("media/net.jpg");
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding-left: 40px;
+        }
+
+        .hero-title {
+            font-size: 42px;
+            font-weight: bold;
+            font-style: italic;
+            color: darkblue;
+            text-align: center;
+        }
+
+        .footer {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            font-size: 14px;
+            font-style: italic;
+            font-family: cursive;
+            color: #222;
+        }
+
+        .team-img {
+            display: block;
+            margin: 30px auto 10px auto;
+            width: 400px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        table {
+            width: 90%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            border: 1px solid #ccc;
+        }
+
+        th {
+            background-color: #5c7cfa;
+            color: white;
+        }
+
+        td img {
+            border-radius: 8px;
+        }
+
+        .protocol-section {
+            position: relative;
+            text-align: center;
+            color: white;
+            margin: 40px 0;
+        }
+
+        .protocol-section img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+        }
+
+        .protocol-section h1 {
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            font-size: 48px;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 12px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        .content-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 40px;
+            gap: 30px;
+        }
+
+        .content-section h2,
+        .content-section h3 {
+            color: #056e46;
+        }
+
+        .content-section p,
+        .content-section li {
+            font-size: 17px;
+            color: #333;
+        }
+
+        .content-section ol,
+        .content-section ul {
+            padding-left: 20px;
+        }
+
+        .content-section img {
+            margin-top: 80px;
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="hero-section">
+        <div class="hero-title">
+            Welcome to ENCS3320 <br> Computer Networks <br> Webserver
+        </div>
+        <div class="footer">
+            Made by: Sara Al Souqi & Saja Ali <br>
+            Instructor: Ibrahim Nemer
+        </div>
+    </div>
+
+    <img src="media/team.jpeg" alt="Team Members" class="team-img">
+
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Name</th>
+            <th>ID</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td><img src="media/mem1.png" alt="Photo of Sara" width="100" height="100"></td> 
+            <td>Sara Al Souqi</td>
+            <td>1221618</td>
+            <td>
+                <p>Projects: Web Server</p>
+                <p>Skills: Python, C, Networking, Java</p>
+                <p>Hobbies: Reading</p>    
+            </td>
+        </tr>
+        <tr>
+            <td><img src="media/mem2.png" alt="Photo of Saja" width="100" height="100"></td>
+            <td>Saja Ali</td>
+            <td>1221707</td>
+            <td>
+                <p>Projects: Web Server</p>
+                <p>Skills: Python, C, Networking, Java</p>
+                <p>Hobbies: mathmatical</p>    
+            </td>
+        </tr>
+    </table> 
+
+    <div class="protocol-section">
+        <img src="media/protocol.jpg" alt="Protocol Banner">
+        <h1>What Is a Protocol?</h1>
+    </div>
+
+    <div class="content-section">
+        <div style="width: 55%;">
+            <h2>What Is a Protocol?</h2>
+            <p>
+                A protocol in computer networks is a set of rules that govern the communication between two or more entities.
+                These rules define <i>how messages are formatted, ordered, and how participants respond to them</i>.
+            </p>
+            <h3>Human Analogy</h3>
+            <p>
+                Just like two people follow a pattern when greeting each other (e.g., saying "Hi", responding, then asking a question), 
+                computers follow communication rules through protocols.
+            </p>
+            <p>
+                <em>Example:</em> If Person A says “Hi”, and Person B replies “Hi”, only then Person A proceeds to ask a question. 
+                The same logic applies to network protocols.
+            </p>
+            <h3>Main Characteristics of Protocols:</h3>
+            <ol>
+                <li><strong>Syntax:</strong> Defines the structure or format of the data (e.g., headers, fields).</li>
+                <li><strong>Semantics:</strong> Describes the meaning of each part of the message.</li>
+                <li><strong>Timing:</strong> Includes when data should be sent and how fast.</li>
+            </ol>
+            <h3>Examples of Network Protocols:</h3>
+            <ul>
+                <li><strong>HTTP:</strong> Used for transferring web pages over the Internet.</li>
+                <li><strong>TCP/IP:</strong> Ensures reliable communication between computers.</li>
+                <li><strong>DNS:</strong> Resolves domain names to IP addresses.</li>
+                <li><strong>SMTP:</strong> Used for sending emails.</li>
+            </ul>
+        </div>
+
+        <div style="width: 40%;">
+            <img src="media/typeOfprotocols.jpg" alt="Protocol Diagram">
+        </div>
+    </div>
+    <div style="text-align: center; padding: 20px; background-color: #eef; margin-top: 0px;">
+        <a href="mySite_1221618_en.html" target="_blank" style="font-size: 20px; color: #0056b3; text-decoration: none;">
+          👉 Visit My Personal Page
+        </a>
+    </div>
+    <div style="text-align: center; padding: 20px; background-color: #eef;">
+        <h2 style="color: #056e46;">Useful External Links</h2>
+        <p>
+            <a href="https://gaia.cs.umass.edu/kurose_ross/index.php" target="_blank" style="font-size: 18px; color: #0056b3; text-decoration: none;">
+                Textbook Website - Kurose & Ross
+            </a>
+        </p>
+        <p>
+            <a href="https://www.birzeit.edu/" target="_blank" style="font-size: 18px; color: #0056b3; text-decoration: none;">
+                Birzeit University Website
+            </a>
+        </p>
+    </div>
+    
+      
+</body>
+</html>

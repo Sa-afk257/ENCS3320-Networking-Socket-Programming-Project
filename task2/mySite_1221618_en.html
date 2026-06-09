@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Networking Media Request - 1221618</title>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+            .hero-section {
+                background-image: url("media/social.jpg");
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .hero-title {
+                position: absolute;
+                top: 200px;
+                font-family: cursive;
+                font-size: 100px;
+                font-weight: bold;
+                font-style: italic;
+                color: rgb(253, 253, 253);
+            }
+            .form-container {
+                width: 50%;
+                margin: 20px auto;
+                padding: 20px;
+                border: 2px solid #ccc;
+                border-radius: 8px;
+                background-color: #f4f4f4;
+            }
+            label {
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+            select {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+            }
+            button {
+                background-color: #8ef1ec;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #7ad9d5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero-section">
+            <div class="hero-title">
+                Request Media
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>Request an Image or Video</h2>
+            <!-- Action points to your server endpoint -->
+            <form action="http://localhost:9968/handle-request" method="GET">
+                <label for="file-type">Select file type (Image or Video):</label><br>
+                <select id="file-type" name="file-type" required>
+                    <option value="none">None</option>
+                    <option value="image">Image</option>
+                    <option value="video">Video</option>
+                </select><br><br>
+
+                <label for="filename">Enter file name (e.g., router.jpg or tcp.mp4):</label><br>
+                <input type="text" id="filename" name="filename" required><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </body>
+</html>

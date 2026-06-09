@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="ar">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>طلب وسائط الشبكات - 1221618</title>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+            .hero-section {
+                background-image: url("media/social.jpg");
+                height: 100vh;
+                background-size: cover;
+                background-position: center;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            .hero-title {
+                position: absolute;
+                top: 200px;
+                font-family: cursive;
+                font-size: 100px;
+                font-weight: bold;
+                font-style: italic;
+                color: rgb(253, 253, 253);
+            }
+            .form-container {
+                width: 50%;
+                margin: 20px auto;
+                padding: 20px;
+                border: 2px solid #ccc;
+                border-radius: 8px;
+                background-color: #f4f4f4;
+            }
+            label {
+                font-size: 18px;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            }
+            input[type="text"] {
+                width: 100%;
+                padding: 10px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+            }
+            select {
+                width: 100%;
+                padding: 10px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 1px solid #ccc;
+                margin-bottom: 20px;
+            }
+            button {
+                background-color: #8ef1ec;
+                padding: 10px 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: none;
+                cursor: pointer;
+            }
+            button:hover {
+                background-color: #7ad9d5;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="hero-section">
+            <div class="hero-title">
+                طلب وسائط
+            </div>
+        </div>
+        <div class="form-container">
+            <h2>طلب صورة أو فيديو</h2>
+            <!-- Action points to your server endpoint -->
+            <form action="http://localhost:9968/handle-request" method="GET">
+                <label for="file-type">اختر نوع الملف (صورة أو فيديو):</label><br>
+                <select id="file-type" name="file-type" required>
+                    <option value="none">بدون تحديد</option>
+                    <option value="image">صورة</option>
+                    <option value="video">فيديو</option>
+                </select><br><br>
+
+                <label for="filename">أدخل اسم الملف (مثل: router.jpg أو tcp.mp4):</label><br>
+                <input type="text" id="filename" name="filename" required><br><br>
+
+                <button type="submit">إرسال</button>
+            </form>
+        </div>
+    </body>
+</html>
